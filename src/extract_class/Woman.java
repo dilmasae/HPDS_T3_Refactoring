@@ -2,27 +2,15 @@ package extract_class;
 
 public class Woman extends Person {
     
-    private String bank;
-    private int money;
+    private Money money;
     
-    public Woman(String name, int age, String sex) {
+    public Woman(String name, int age, String sex, Money money) {
         super(name, age, sex);
-    }
-    
-    public String getNameOfTheBank() {
-        return bank;
-    }
-    
-    public void setNameOfTheBank(String bank) {
-        this.bank = bank;
-    }
-    
-    public int getMyMoney() {
-        return money;
-    }
-    
-    public void setMyMoney(int money) {
         this.money = money;
+    }
+
+    public Money getMoney() {
+        return money;
     }
     
 }
