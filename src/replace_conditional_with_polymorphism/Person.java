@@ -1,6 +1,6 @@
 package replace_conditional_with_polymorphism;
 
-public class Person {
+public abstract class Person {
 
     private String name;
     private String country;
@@ -10,14 +10,6 @@ public class Person {
         this.country = country;
     }
     
-    public String getMessage() {
-        switch(country) {
-            case "Spain":
-                return "Nice";
-            case "Ecuador":
-                return "So cute";
-        }
-        return null;
-    }
+    public abstract String getMessage();
     
 }
