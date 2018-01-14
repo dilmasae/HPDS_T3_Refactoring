@@ -1,6 +1,6 @@
 package extract_interface;
 
-public class Person {
+public class Person implements Actions {
 
     private String name;
 
@@ -15,7 +15,8 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    
+
+    @Override
     public void write() {
         System.out.println("Hello World!");
     }
