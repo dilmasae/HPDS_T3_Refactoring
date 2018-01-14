@@ -1,19 +1,22 @@
 package introduce_null_object;
 
+import java.util.Optional;
+
 public class Person {
 
-    private String name;
+    private Optional<String> name;
     
     public Person() {
-        
+        name = Optional.empty();
     }
     
-    public Person(String name) {
+    public Person(Optional<String> name) {
         this.name = name;
     }
 
     public String getName() {
-        return name;
+        if(name.isPresent()) return name.get();
+        return "";
     }
     
 }
