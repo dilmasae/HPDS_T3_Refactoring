@@ -2,6 +2,18 @@ package encapsulate_field;
 
 public class Money {
 
-    public int amount;
+    private int amount;
+    
+    public Money(int amount) {
+        this.amount = amount;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
     
 }
