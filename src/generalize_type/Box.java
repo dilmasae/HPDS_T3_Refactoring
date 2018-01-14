@@ -1,11 +1,11 @@
 package generalize_type;
 
-public class Box {
+public class Box<T> {
     
-    private Object object;
+    private T t;
     
-    public void set(Object object) { this.object = object; }
+    public void set(T t) { this.t = t; }
     
-    public Object get() { return object; }
+    public T get() { return t; }
     
 }
